@@ -1,0 +1,39 @@
+<!-- Liam Mapplebeck 19009191 06/11/2020 -->
+<!DOCTYPE html>
+<html>
+
+<a href =""target="_blank"> <button type"button"class="button-basic"> Addition </button></a>
+<br>
+
+<script> 
+var userNum1 = 0;
+var userNum2 = 0;
+var Diff;
+var Product;
+var Total;
+var Divide;
+var Remainder;
+
+userNum1 = parseInt(prompt("Enter Your 1st Number"));
+userNum2 = parseInt(prompt("Enter Your 2nd Number"));
+
+if (userNum1 < userNum2)
+{
+alert ("The First Number That You Entered Has To Be Higher Than The Second One!");
+userNum1 = parseInt(prompt("Enter Your First Number"));
+userNum2 = parseInt(prompt("Enter Your Second Number"));
+}
+
+Total = (userNum1 + userNum2);
+Diff = (userNum1 - userNum2);
+Divide = (Math.round(userNum1 / userNum2));
+Product = (userNum1 * userNum2);
+Remainder = (userNum1 % userNum2)
+
+document.write(Total + " " + Diff + " " + Product + " " + Divide + " " + Remainder + "<br>");
+document.write("The Total Number is " + Total + "<br>");
+document.write("Difference Between The Numbers is " + Diff + "<br>");
+document.write("The Numbers Multiplied are " + Product + "<br>");
+document.write("The Numbers Divided are " + Divide + "<br>");
+document.write("The Remainder is " + Remainder + "<br>");
+</script>
